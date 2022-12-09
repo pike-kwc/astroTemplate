@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import ReactComponent from '../components/ReactComponent.jsx'
+import PreactComponent from '../components/PreactComponent.jsx'
 ---
 
 <Layout title="Welcome to Astro.">
@@ -33,7 +34,8 @@ import ReactComponent from '../components/ReactComponent.jsx'
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
-		<ReactComponent></ReactComponent>
+		<ReactComponent client:load />
+		<PreactComponent client:load />
 	</main>
 </Layout>
 
